@@ -1,0 +1,1359 @@
+/*********** starting the constant *************/ 
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+@font-face {
+    font-family: DroidArabicKufiRegular;
+    src: url(../fonts/DroidArabicKufiRegular.ttf);
+}
+body
+{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: normal;
+    font-style: normal;
+    text-align: right;
+}
+.main-color
+{
+    color: #1c3765;
+}
+.second-color
+{
+    color: #c3ab84;
+}
+a
+{
+    text-decoration: none !important;
+}
+input:focus,
+textarea:focus
+{
+    outline: none;
+}
+/*********** End the constant *************/
+/***********  *************/
+/***********  *************/
+.large-background
+{
+    background: url(../images/body-background.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -0-background-size: cover;
+    background-size: cover;
+    height: 100% !important;
+    width: 100% !important;
+}
+@media (max-width: 576px)
+{
+    .large-background
+    {
+        background: none;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    .large-background
+    {
+        background: none;
+    }
+}
+/***********  *************/
+/***********  *************/
+/*********** starting header for laptop screen *************/
+header
+{
+    background: url(../images/intro-slider-flag.png) no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -0-background-size: contain;
+    background-size: contain;
+    height: 703px;
+    width: 100% !important;
+    display: block;
+}
+header:after
+{
+    content: "بضمان الحكومة التركية";
+    position: absolute;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    width: 200px;
+    text-align: center;
+    bottom: 24%;
+    font-size: 18px;
+}
+header nav
+{
+    background-color: #5c606a;
+    position: relative;
+}
+header nav .container
+{
+    padding: 5px 0px;
+}
+header nav .container .row > div
+{
+    text-align: center;
+}
+header nav .container .row > div a i
+{
+    background-color: #fff;
+    color: #5c606a;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    margin: 0px 5px;
+    transition: all .35s ease-in-out;
+}
+header nav .container .row > div a i:hover
+{
+    border: 1px solid #c4ab84;
+    background-color: #c4ab84;
+}
+header nav .container .row > div p
+{
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    direction: ltr;
+}
+header nav .container .row > div p i
+{
+    margin-right: 10px;
+}
+header nav .container .row > div img
+{
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c4ab84;
+    top: -5px;
+    padding: 10px 5px 5px 5px;
+    width: 85px;
+}
+header .project-details
+{
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    text-align: -webkit-center;
+}
+header .project-details > div:nth-child(1) img
+{
+    margin-top: 10px;
+    width: 80px;
+    margin-bottom: 15px;
+}
+header .project-details > div:nth-child(2)
+{
+    border: 2px solid #fff;
+    margin-bottom: 7px;
+    width: 200px;
+}
+header .project-details > div:nth-child(2) h6
+{
+    color: #fff;
+    background-color: #2b313d;
+    margin-top: -11px;
+    width: 70px;
+    text-align: center;
+}
+header .project-details > div:nth-child(2) h3
+{
+    color: #c3ab85;
+    font-size: 20px;    
+}
+header .project-details > div:nth-child(3)
+{
+    background-color: #0c1d3f;
+    padding: 5px 0px 1px 0px;
+}
+header .project-details > div:nth-child(3) h4
+{
+    font-size: 15px;
+    width: max-content;
+    margin-right: -10px;
+}
+header .project-details > div:nth-child(3) h4 span
+{
+    
+}
+header .contact-form
+{
+    width: 250px;
+    position: absolute;
+    top: 33%;
+    right: 23%;
+    background-color: #d5d6d9;
+    border: 2px solid #5c606a;
+    padding: 15px 15px 0px 15px;
+}
+header .contact-form h4
+{
+    font-size: 17px;
+    text-align: center;
+}
+header .contact-form form input
+{
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #c5ac84;
+    background-color: transparent;
+}
+header .contact-form form input[type=submit]
+{
+    border: none;
+    color: #fff;
+    background-color: #c5ac84;
+    width: 75%;
+    margin: auto;
+    margin-bottom: -18px;
+    display: -webkit-box;
+    padding: 7px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+}
+header .contact-form form input[type=submit]:hover
+{
+    background-color: #37474f;
+}
+@media (max-width: 576px)
+{
+    header
+    {
+        display: none;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    header
+    {
+        display: none;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px)
+{
+    header
+    {
+        height: 470px;
+    }
+    header nav .container .row > div img
+    {
+        width: 75px;
+    }
+    header .contact-form
+    {
+        top: 12%;
+        right: 7%;
+    }
+    header:after
+    {
+        font-size: 14px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1199px)
+{
+    header
+    {
+        height: 570px;
+    }
+    header nav .container .row > div img
+    {
+        width: 85px;
+    }
+    header .contact-form
+    {
+        top: 12%;
+        right: 7%;
+    }
+    header:after
+    {
+        bottom: 14%;
+        font-size: 15px;
+    }
+}
+/*********** End header for laptop screen *************/
+/***********  *************/
+/***********  *************/
+/*********** starting mobile-header *************/
+.mobile-header
+{
+    background: url(../images/mobile-header.png) no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -0-background-size: contain;
+    background-size: contain;
+    height: 620px;
+    width: 100% !important;
+    background-color: #2f3440;
+    display: none;
+}
+.mobile-header .overlay
+{
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+.mobile-header nav
+{
+    margin-bottom: 30px;
+}
+.mobile-header nav i
+{
+    margin-top: 25px;
+    color: #fff;
+    background-color: #232730;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9999999;
+    text-align: -webkit-center;
+    line-height: 50px;
+    border-radius: 50%;   
+}
+.mobile-header nav .row > div:nth-child(2) img 
+{
+    width: 75px;
+    margin-top: 15px;
+}
+.mobile-header nav .row > div:nth-child(3) img 
+{
+    background-color: #c2aa83;
+    padding: 10px 5px 5px 5px;
+    width: 70px;
+}
+.mobile-header .project-details
+{
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+    text-align: -webkit-center;
+}
+.mobile-header .project-details > div:nth-child(1)
+{
+    border: 2px solid #fff;
+    margin-bottom: 15px;
+    width: 200px;
+}
+.mobile-header .project-details > div:nth-child(1) h6
+{
+    color: #fff;
+    background-color: #2f3440;
+    margin-top: -11px;
+    width: 70px;
+    text-align: center;
+}
+.mobile-header .project-details > div:nth-child(1) h3
+{
+    color: #c3ab85;
+    font-size: 20px;    
+}
+.mobile-header .project-details > div:nth-child(1) h3 span
+{
+    font-family: sans-serif;
+    margin-right: 7px;
+}
+.mobile-header .project-details > div:nth-child(2)
+{
+    background-color: #0c1d3f;
+    padding: 5px 0px 1px 0px;
+}
+.mobile-header .project-details > div:nth-child(2) h4
+{
+    font-size: 15px;
+    width: max-content;
+    margin-right: -10px;    
+}
+.mobile-header .contact-form
+{
+    width: 265px;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d5d6d9;
+    border: 2px solid #5c606a;
+    padding: 15px 15px 0px 15px;
+}
+.mobile-header .contact-form h4
+{
+    font-size: 18px;
+    text-align: center;
+}
+.mobile-header .contact-form form input
+{
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #c5ac84;
+    background-color: transparent;
+}
+.mobile-header .contact-form form input[type=submit]
+{
+    border: none;
+    color: #fff;
+    background-color: #c5ac84;
+    width: 75%;
+    margin: auto;
+    margin-bottom: -18px;
+    display: -webkit-box;
+    padding: 7px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+}
+.mobile-header .contact-form form input[type=submit]:hover
+{
+    background-color: #37474f;
+}
+.mobile-header .details
+{
+    bottom: 25px;
+    left: 7%;
+/*    width: 90%;*/
+}
+.mobile-header .details p
+{
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    direction: ltr;
+    font-size: 15px;
+}
+.mobile-header .details p i
+{
+    margin-right: 10px;
+}
+.mobile-header .redline
+{
+    width: 180px;
+    bottom: 25px;
+    position: absolute;
+    right: -10px;
+}
+.mobile-header .menu
+{
+    left: 415px;
+    top: 0;
+    width: 73%;
+    height: 100%;
+    background: rgba(0,0,0,.85);
+    padding: 20px;
+    position: fixed !important;
+    z-index: 99999;
+    transition: all 1.5s ease-in-out;
+}
+.mobile-header .menu i
+{
+    color: #c6ad85;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.mobile-header .menu a
+{
+    color: #c6ad85;
+    display: -webkit-box;
+    border-bottom: 1px solid #c6ad85;
+    padding: 25px 0px;
+    font-size: 18px;
+}
+.mobile-header .menu a:last-child
+{
+    border-bottom: none;
+}
+@media (max-width: 576px)
+{
+    .mobile-header
+    {
+        display: block;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    .mobile-header
+    {
+        display: block;
+    }
+    .mobile-header .menu
+    {
+        left: 687px;
+        width: 49%;
+    }
+    .mobile-header nav .row > div
+    {
+        text-align: center;
+    }
+}
+/*********** End mobile-header *************/
+/***********  *************/
+/***********  *************/
+/*********** starting project-site *************/
+.project-site
+{
+    text-align: center;
+    margin-top: -170px;
+}
+.project-site .container
+{
+    padding-bottom: 50px;
+}
+.project-site .container > h3
+{
+    padding-top: 20px;
+}
+.project-site .container > p
+{
+    padding: 0px 150px;
+}
+.project-site .container .row
+{
+    padding: 0px;
+    margin: 0px;
+}
+.project-site .container .row div
+{
+    padding: 0px;
+    margin: 0px;
+}
+.project-site .container > .row
+{
+    direction: ltr;
+    text-align: -webkit-center;
+    justify-content: center;    
+}
+.project-site .container > .row > div:nth-child(1)
+{
+    margin-right: 16px;
+}
+.project-site .container > .row > div:nth-child(2) > div:nth-child(1)
+{
+    height: 187.19px;
+    margin-bottom: 18px;
+}
+.project-site .container > .row > div:nth-child(2) > div:nth-child(2)
+{
+    height: 389.31px;
+}
+.project-site .container > .row > div:nth-child(1) > div > .row > div:nth-child(1)
+{
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.project-site .container > .row > div:nth-child(1) > div > .row > div:nth-child(2) > div:nth-child(1)
+{
+    margin-bottom: 18px;
+}
+.project-site .container .main-box
+{
+    position: relative;
+}
+.project-site .container .main-box > img
+{
+    width: 100%;
+    height: 100%;
+}
+.project-site .container .main-box .overlay
+{
+    position: absolute;
+    width: 92%;
+    height: 90%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(255,255,255,.9);
+    margin: auto;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .35s ease-in-out;
+}
+.project-site .container .main-box:hover .overlay
+{
+    opacity: 1;
+}
+.project-site .container .main-box .overlay div
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0px;
+    margin: auto;
+    width: 110px;
+    height: 75px;
+}
+.project-site .container .main-box .overlay h5
+{
+    color: #828181;
+    font-size: 17px;
+}
+.project-site .container .main-box .overlay img
+{
+    width: 35px;
+}
+@media (max-width: 576px)
+{
+    .project-site
+    {
+        margin-top: 0px;
+        display: none;
+    }
+    .project-site .container > p
+    {
+        padding: 0px;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    .project-site
+    {
+        display: none;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px)
+{
+    .project-site
+    {
+        margin-top: -48px;
+    }
+    .project-site .container > p
+    {
+        padding: 0px 80px;
+    }
+    .project-site .container > .row > div:nth-child(2) > div:nth-child(1)
+    {
+        height: 113.19px;
+    }
+    .project-site .container > .row > div:nth-child(2) > div:nth-child(2)
+    {
+        height: 239.31px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1199px)
+{
+    .project-site
+    {
+        margin-top: -68px;
+    }
+    .project-site .container > p
+    {
+        padding: 0px 80px;
+    }
+    .project-site .container > .row > div:nth-child(2) > div:nth-child(1)
+    {
+        height: 155.19px;
+    }
+    .project-site .container > .row > div:nth-child(2) > div:nth-child(2)
+    {
+        height: 324.31px;
+    }
+}
+/*********** End project-site *************/
+/***********  *************/
+/***********  *************/
+/*********** starting mobile-project-site *************/
+.mobile-project-site
+{
+    text-align: center;
+    display: none;
+}
+.mobile-project-site .container
+{
+    padding-bottom: 50px;
+}
+.mobile-project-site .container > h3
+{
+    padding-top: 20px;
+}
+.mobile-project-site .container > p
+{
+    font-size: 13.5px;
+    text-align: justify;    
+}
+.mobile-project-site .container > div 
+{
+    margin-bottom: 10px;
+}
+.mobile-project-site .container > div .row
+{
+    
+}
+.mobile-project-site .container > div .row > div
+{
+    padding: 0px 5px;
+}
+.mobile-project-site .container > div img
+{
+    width: 100%;
+}
+@media (max-width: 576px)
+{
+    .mobile-project-site
+    {
+        display: block;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    .mobile-project-site
+    {
+        display: block;
+    }
+    .mobile-project-site .row
+    {
+        width: 100px;
+        margin: auto;
+    }
+}
+/*********** End mobile-project-site *************/
+/***********  *************/
+/***********  *************/
+/*********** starting locations *************/
+.locations
+{
+    border-top: 3px solid #c4ab84;
+    border-bottom: 4px solid #c4ab84;
+    background: url(../images/location-background.png) no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -0-background-size: contain;
+    background-size: contain;
+    height: 271.5px;
+    width: 100% !important;
+    text-align: center;
+}
+.locations > img
+{
+    width: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -33px;
+}
+.locations .container
+{
+    padding-top: 30px;
+}
+.locations .container > img
+{
+    width: 220px;
+    margin-bottom: 20px;
+}
+.locations .container .row > div img
+{
+    height: 60px;
+    margin-bottom: 10px;
+}
+.locations .container .row > div h5
+{
+    color: #fff;
+    font-size: 16px;
+}
+.locations .container .row > div h6
+{
+    color: #fff;
+    font-size: 11px;
+}
+.locations .container .row > div span
+{
+    background-color: #fcc905;
+    color: #3d0a33;
+    font-weight: bold;
+    width: 25px;
+    height: 20px;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+    line-height: 20px;
+    margin-left: 5px;
+    transform: skew(-15deg);
+    font-family: sans-serif;
+}
+@media (max-width: 576px)
+{
+    .locations
+    {
+        background: url(../images/location-mobile-background.png) no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -0-background-size: contain;
+        background-size: contain;
+        height: 522px;
+        width: 100% !important;
+        text-align: center;
+    }
+    .locations .container > img
+    {
+        margin-bottom: 10px;
+    }
+    .locations .container .row > div
+    {
+        margin-bottom: 20px;
+    }
+    .locations .row
+    {
+        width: 100%;
+        margin: auto;
+    }
+    .locations .container .row > div img
+    {
+        height: 45px;
+    }
+}
+@media (min-width: 400px) and (max-width: 420px)
+{
+    .locations
+    {
+        background: url(../images/location-mobile-background.png) no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -0-background-size: contain;
+        background-size: contain;
+        height: 593px;
+        width: 100% !important;
+        text-align: center;
+    }
+    .locations .container .row > div img
+    {
+        height: 60px;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    .locations
+    {
+        background: url(../images/location-background.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -0-background-size: cover;
+        background-size: cover;
+        height: 420px;
+        width: 100% !important;
+    }
+    .locations .container .row > div
+    {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px)
+{
+    .locations
+    {
+        background: url(../images/location-background.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -0-background-size: cover;
+        background-size: cover;
+        height: 280px;
+    }
+    .locations .container .row > div h5
+    {
+        font-size: 12px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1199px)
+{
+    .locations
+    {
+        background: url(../images/location-background.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -0-background-size: cover;
+        background-size: cover;
+        height: 280px;
+    }
+}
+/*********** End locations *************/
+/***********  *************/
+/***********  *************/
+/*********** starting services *************/
+.services .container
+{
+    padding: 35px 0px;
+}
+.services .container > img
+{
+    width: 220px;
+    margin-bottom: 20px;
+}
+.services .container > div:nth-of-type(1) > div > div
+{
+    width: 95px;
+    height: 95px;
+    margin: auto;
+    border: 2px solid #c6ad85;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    line-height: 95px;
+}
+.services .container > div:nth-of-type(1) > div > div img
+{
+    height: 60px;
+    width: 60px;
+}
+.services .container > div:nth-of-type(1) > div h6
+{
+    color: #1c3765;
+}
+.services .container > div:nth-of-type(2)
+{
+    width: 70%;
+    margin: auto;
+    margin-top: 35px;
+}
+.services .container > div:nth-of-type(2) > div h4
+{
+    color: #1c3765;
+    margin-bottom: 3px
+}
+.services .container > div:nth-of-type(2) > div > img
+{
+    width: 160px;
+    margin-bottom: 25px;
+}
+.services .container > div:nth-of-type(2) > div h2
+{
+    color: #1c3765;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.services .container > div:nth-of-type(2) > div h2 img
+{
+    margin-left: 15px;
+}
+.services .container > div:nth-of-type(2) > div h2 span
+{
+    font-family: 'DroidArabicKufiRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+@media (max-width: 576px)
+{
+    .services .row
+    {
+        width: 100%;
+        margin: auto;
+    }
+    .services .container > div:nth-of-type(2)
+    {
+        width: 100%;
+    }
+    .services .container > div:nth-of-type(2) > div
+    {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    .services .container > div:nth-of-type(1) > div
+    {
+        margin-bottom: 20px
+    }
+    .services .container > div:nth-of-type(2) > div
+    {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px)
+{
+    .services .container > div:nth-of-type(1) > div h6
+    {
+        font-size: 15px;
+    }
+    .services .container > div:nth-of-type(2)
+    {
+        width: 90%;
+    }
+}
+/*********** End services *************/
+/***********  *************/
+/***********  *************/
+/*********** starting offers *************/
+.offers
+{
+    border-top: 3px solid #2f3440;
+    border-bottom: 4px solid #2f3440;
+    background: url(../images/offers-background.png) no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -0-background-size: contain;
+    background-size: contain;
+    height: 280px;
+    width: 100% !important;
+    text-align: center;
+}
+.offers .container
+{
+    padding: 15px 0px;
+}
+.offers .container > img
+{
+    width: 220px;
+    margin-bottom: 20px;
+}
+.offers .container .row > div h4
+{
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #2f3440;
+}
+.offers .container .row > div h2
+{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+}
+.offers .container .row > div:nth-child(1) h2 img
+{
+    width: 60px;
+    margin-left: 15px;
+}
+.offers .container .row > div:nth-child(2) h2 img
+{
+    width: 40px;
+    margin-left: 15px;
+}
+.offers .container .row > div h5
+{
+    color: #2f3440;
+}
+.offers .container .row > div h5 span
+{
+    font-family: sans-serif;
+}
+@media (max-width: 576px)
+{
+    .offers
+    {
+        background: url(../images/offers-background.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -0-background-size: cover;
+        background-size: cover;
+        height: 450px;
+    }
+    .offers .row
+    {
+        width: 100%;
+        margin: auto;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    .offers
+    {
+        background: url(../images/offers-background.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -0-background-size: cover;
+        background-size: cover;
+        height: 280px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px)
+{
+    .offers
+    {
+        background: url(../images/offers-background.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -0-background-size: cover;
+        background-size: cover;
+        height: 280px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1199px)
+{
+    .offers
+    {
+        background: url(../images/offers-background.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -0-background-size: cover;
+        background-size: cover;
+        height: 280px;
+    }
+}
+/*********** End offers *************/
+/***********  *************/
+/***********  *************/
+/*********** starting about *************/
+.about
+{
+    text-align: center;
+}
+.about .container
+{
+    padding: 30px 0px 60px 0px;
+}
+.about .container > h3
+{
+    font-size: 23px;
+    font-weight: bold;
+}
+.about .container > img
+{
+    display: block;
+    margin: auto;
+    width: 220px;
+    margin-bottom: 30px;
+}
+.about .container form .row > div
+{
+    margin-bottom: 30px;
+}
+.about .container form .row > div input
+{
+    border: none;
+    border-bottom: 1px solid #c2aa84;
+    padding: 5px;
+    background-color: transparent;
+}
+.about .container form > input
+{
+    background-color: #c5ac84;
+    color: #2f3440;
+    border: none;
+    padding: 5px 60px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+}
+.about .container form > input:hover
+{
+    background-color: #ad956d;
+}
+.about .container > div img
+{
+    width: 150px;
+    margin-bottom: 20px;    
+}
+.about .container > div h5
+{
+    color: #2f3440;
+    font-size: 16px;
+}
+.about .container > div h5 span
+{
+    color: #2f3440;
+    font-weight: bold;
+}
+@media (max-width: 576px)
+{
+    .about .container > iframe
+    {
+        width: 100%;
+    }
+    .about .container form h4
+    {
+        font-size: 20px;
+        padding: 0px 50px;
+        line-height: 1.6;
+    }
+    .about .row
+    {
+        width: 100%;
+        margin: auto;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    .about .container > iframe
+    {
+        width: 80%;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px)
+{
+    .about .container > iframe
+    {
+        width: 70%;
+    }
+}
+@media (min-width: 993px) and (max-width: 1199px)
+{
+    .about .container > iframe
+    {
+        width: 60%;
+    }
+}
+/*********** End about *************/
+/***********  *************/
+/***********  *************/
+/*********** starting footer *************/
+footer
+{
+    text-align: center;
+    background-color: #2f3440;
+    margin-top: -26px;
+}
+footer .container
+{
+    padding: 10px;
+}
+footer .container > img
+{
+    width: 300px;
+    margin-top: -63px;
+}
+footer .container > div > a i
+{
+    background-color: #fff;
+    color: #5c606a;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    margin: 0px 5px;
+    transition: all .35s ease-in-out;
+}
+footer .container > div > a i:hover
+{
+    border: 1px solid #c4ab84;
+    background-color: #c4ab84;
+}
+footer .container > div > p
+{
+    font-family: sans-serif;
+    direction: ltr;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+footer .container > div > p i
+{
+    color: #fff;
+    margin-right: 10px;
+}
+footer .container  .row > div > img
+{
+    width: 150px;
+}
+footer .container  .row > div:nth-child(2) p
+{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-top: 20px;
+}
+footer .container  .row > div:nth-child(3) p
+{
+    font-size: 12px;
+    margin-top: 20px;
+}
+footer .container  .row > div p i
+{
+    color: #c5ac84;
+    margin-right: 10px;
+}
+@media (max-width: 576px)
+{
+    footer .row
+    {
+        width: 100%;
+        margin: auto;
+    }
+}
+/*********** End footer *************/
+/***********  *************/
+/***********  *************/
+/*********** starting button-top *************/
+#button-top
+{
+    background-color: #c2aa83;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+    line-height: 40px;
+    color: #fff;
+    opacity: 0.8;
+}
+#button-top:hover i
+{
+    opacity: 0.5;
+}
+/***********  End button-top*************/
+/***********media query  *************/
+@media (max-width: 576px)
+{
+    .container
+    {
+        width: 340px;
+    }
+}
+@media (min-width: 576px)
+{
+    .container
+    {
+        width: 540px;
+    }
+}
+@media (min-width: 768px)
+   
+{
+    .container
+    {
+        width: 720px;
+    }
+}
+@media (min-width: 992px)
+ 
+{
+    .container
+    {
+        width: 960px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .container
+    {
+        width: 1200px;
+    }
+}
+@media (min-width: 1370px)
+{
+    .container
+    {
+        width: 1350px;
+    }
+}
+/******* End @media *********/

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <!-- for responsive page -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/down-logo.png">
+        <title>لال بهشة | lal Bahce</title>
+        <!-- library for icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/fontawesome5.min.css">
+        <!-- fancybox -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <!-- frame work -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style file -->
+        <link rel="stylesheet" href="css/mystyle.css">
+    </head>
+    <body>
+        <!------------------------ starting header for laptop screen ------------------------------>
+        <header class="position-relative">
+            <nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="https://www.linkedin.com/company/lalegroup"><i class="fa fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/lalegroup/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/lalegroup/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://twitter.com/lale_group"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <div class="col-sm"><p class="text-white"><i class="fa fa-whatsapp"></i> +90 552 341 1111</p></div>
+                        <div class="col-sm position-relative"><img class="position-absolute" src="images/main-logo.png" alt="..."></div>
+                    </div>
+                </div>
+            </nav>
+            <div class="project-details position-absolute">
+                <div><img src="images/project-logo.png" alt=".."></div>
+                <div>
+                    <h6>مشروع</h6>
+                    <h3>ياقوتة باشاك شهير</h3>
+                </div>
+                <div>
+                    <h4 class="text-white"><span class="second-color">الراحة, الطبيعة </span>والحياة الرافهة في مكان واحد</h4>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div>
+                    <h4 class="main-color">تواصل مع الفريق الأستشاري</h4>
+                </div>
+                <form action="index.php?sendconsult" method="post">
+                    <input type="text" name="name" placeholder="الأسم : ">
+                    <input type="tel" name="mobile" placeholder="الرقم : " >
+                    <input type="email" name="email" placeholder="البريد الإلكتروني : ">
+                    <input type="submit" value="ارسل طلب استشارة">
+                </form>
+                
+<!--
+                <?php
+                        header('Content-type: text/html; charset=utf-8');
+                        if (isset($_GET['sendconsult'])) {
+                            $email=$_POST['email'];
+                            $name=$_POST['name'];
+                            $phone=$_POST['mobile'];
+	
+                            if ($_POST['name']<>'') {
+
+                            require_once("class.phpmailer.php");
+
+                            $mail = new PHPMailer();
+                            $mail->CharSet = 'UTF-8';
+                            $mail->IsSMTP();
+                            $mail->Host = "mail.lalegroup.com.tr";
+                            $mail->SMTPAuth = true;
+                            $mail->Username = "citizenship@lalegroup.com.tr";
+                            $mail->Password = " UWfj68J7";
+                            $mail->From = $_POST['email'];
+                            $mail->Fromname = $_POST['name'];
+                            $mail->AddAddress("citizenship@lalegroup.com.tr");
+
+                            $mail->Subject = "Consulatation Request CitizenShip Page";
+                            $mail->Body = "تم إرسال هذا الايميل من موقع لالي من فورم طلب الاستشارة
+                            معلومات فورم التواصل
+
+                                    إسم المرسل: $name 
+                                    إيميل المرسل: $email 
+                                    رقم الهاتف: $phone ";
+
+                            if(!$mail->Send())
+                            {
+                               echo '<font color="#F62217"><b>Gönderim Hatası: ' . $mail->ErrorInfo . '</b></font>';
+                               exit;
+                            }
+                            echo '<font color="#41A317"><b>Mesaj başarıyla gönderildi.</b></font>';
+                            } else {
+                                 echo '<font color="#F62217"><b>Tüm alanların doldurulması zorunludur.</b></font>';
+                            }
+                        }
+                    ?>
+-->
+                
+            </div>
+        </header>
+        <!------------------------ End header for laptop screen ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------ starting mobile-header ------------------------------>
+        <section class="mobile-header position-relative">
+            <div class="overlay">
+                <div class="container">
+                    <nav>
+                        <div class="row">
+                            <div class="col"><i class="fa fa-bars fa-2x"></i></div>
+                            <div class="col"><img src="images/project-logo.png" alt="..."></div>
+                            <div class="col"><img src="images/main-logo.png" alt="..."></div>
+                        </div>
+                    </nav>
+                    <div class="project-details position-absolute">
+                        <div>
+                            <h6>مشروع</h6>
+                            <h3>ياقوتة باشاك شهير</h3>
+                        </div>
+                        <div>
+                            <h4 class="text-white"><span class="second-color">الراحة, الطبيعة </span>والحياة الرافهة في مكان واحد</h4>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <div>
+                            <h4 class="main-color">تواصل مع الفريق الأستشاري</h4>
+                        </div>
+                        <form action="index.php?sendconsult" method="post">
+                            <input type="text" name="name" placeholder="الأسم : ">
+                            <input type="tel" name="mobile" placeholder="الرقم : " >
+                            <input type="email" name="email" placeholder="البريد الإلكتروني : ">
+                            <input type="submit" value="ارسل طلب استشارة">
+                        </form>
+                        
+<!--
+                        <?php
+                        header('Content-type: text/html; charset=utf-8');
+                        if (isset($_GET['sendconsult'])) {
+                            $email=$_POST['email'];
+                            $name=$_POST['name'];
+                            $phone=$_POST['mobile'];
+	
+                            if ($_POST['name']<>'') {
+
+                            require_once("class.phpmailer.php");
+
+                            $mail = new PHPMailer();
+                            $mail->CharSet = 'UTF-8';
+                            $mail->IsSMTP();
+                            $mail->Host = "mail.lalegroup.com.tr";
+                            $mail->SMTPAuth = true;
+                            $mail->Username = "citizenship@lalegroup.com.tr";
+                            $mail->Password = " UWfj68J7";
+                            $mail->From = $_POST['email'];
+                            $mail->Fromname = $_POST['name'];
+                            $mail->AddAddress("citizenship@lalegroup.com.tr");
+
+                            $mail->Subject = "Consulatation Request CitizenShip Page";
+                            $mail->Body = "تم إرسال هذا الايميل من موقع لالي من فورم طلب الاستشارة
+                            معلومات فورم التواصل
+
+                                    إسم المرسل: $name 
+                                    إيميل المرسل: $email 
+                                    رقم الهاتف: $phone ";
+
+                            if(!$mail->Send())
+                            {
+                               echo '<font color="#F62217"><b>Gönderim Hatası: ' . $mail->ErrorInfo . '</b></font>';
+                               exit;
+                            }
+                            echo '<font color="#41A317"><b>Mesaj başarıyla gönderildi.</b></font>';
+                            } else {
+                                 echo '<font color="#F62217"><b>Tüm alanların doldurulması zorunludur.</b></font>';
+                            }
+                        }
+                    ?>
+-->
+                        
+                    </div>
+                    <div class="details text-left position-absolute">
+                        <p class="text-white"><i class="fa fa-whatsapp"></i> +90 552 341 1111</p>
+                    </div>
+                    <img class="redline" src="images/redline-header.png" alt="...">
+                    <div class="menu position-absolute">
+                        <div class="text-left"><i class="fa fa-times-circle fa-2x"></i></div>
+                        <div>
+                            <a class="link1" href="#">موقع المشروع</a>
+                            <a class="link2" href="#">القرب والبعد عن المشروع</a>
+                            <a class="link3" href="#">خدمات المشروع</a>
+                            <a class="link4" href="#">نمط الشقق</a>
+                            <a class="link5" href="#">عروض الدفع</a>
+                            <a class="link7" href="#">تواصل معنا</a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <!------------------------ End mobile-header ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------  ------------------------------>
+     <div class="large-background">
+        <!------------------------ starting project-site ------------------------------>
+        <section class="project-site">
+            <div class="container">
+                <h3 class="main-color">موقع المشروع</h3>
+                <img src="images/beauti-line.png" alt="...">
+                <p class="main-color"> في مركز منطقة باشاك شهير محاط بالعديد من المدارس العربية ووسائل النقل بالإضافة لقربه من المشاريع الحكومية والخاصة الضخمة و الجديدة في المنطقة.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <div class="row">
+                                <div class="col-md main-box">
+                                    <img src="images/project-img1.png" alt="...">
+                                    <a href="images/project-img1.png" class="test-popup-link">
+                                        <div class="overlay">
+                                            <div>
+                                                <h5>عرض الصورة</h5>
+                                                <img src="images/focus.png" alt="...">
+                                            </div>
+                                        </div>
+                                    </a>    
+                                </div>
+                                <div class="col-md">
+                                    <div class="main-box">
+                                        <img src="images/project-img2.png" alt="...">
+                                        <a href="images/project-img2.png" class="test-popup-link">
+                                            <div class="overlay">
+                                                <div>
+                                                    <h5>عرض الصورة</h5>
+                                                    <img src="images/focus.png" alt="...">
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </div>
+                                    <div class="main-box">
+                                        <img src="images/project-img4.png" alt="...">
+                                        <a href="images/project-img4.png" class="test-popup-link">
+                                            <div class="overlay">
+                                                <div>
+                                                    <h5>عرض الصورة</h5>
+                                                    <img src="images/focus.png" alt="...">
+                                                </div> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box">
+                            <img src="images/project-img6.png" alt="...">
+                            <a href="images/project-img6.png" class="test-popup-link">
+                                <div class="overlay">
+                                    <div>
+                                        <h5>عرض الصورة</h5>
+                                        <img src="images/focus.png" alt="...">
+                                    </div> 
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="main-box">
+                            <img src="images/project-img3.png" alt="...">
+                            <a href="images/project-img3.png" class="test-popup-link">
+                                <div class="overlay">
+                                    <div>
+                                        <h5>عرض الصورة</h5>
+                                        <img src="images/focus.png" alt="...">
+                                    </div> 
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-box">
+                            <img src="images/project-img5.png" alt="...">
+                            <a href="images/project-img5.png" class="test-popup-link">
+                                <div class="overlay">
+                                    <div>
+                                        <h5>عرض الصورة</h5>
+                                        <img src="images/focus.png" alt="...">
+                                    </div>    
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ End project-site ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------ starting mobile-project-site ------------------------------>
+        <section id="mobile-project-site" class="mobile-project-site">
+            <div class="container">
+                <h3 class="main-color">موقع المشروع</h3>
+                <img src="images/beauti-line.png" alt="...">
+                <p class="main-color"> في مركز منطقة باشاك شهير محاط بالعديد من المدارس العربية ووسائل النقل بالإضافة لقربه من المشاريع الحكومية والخاصة الضخمة و الجديدة في المنطقة.</p>
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="images/project-img5.png" class="test-popup-link">
+                                <img src="images/project-img5.png">
+                            </a>    
+                        </div>
+                        <div class="col">
+                            <a href="images/project-img1.png" class="test-popup-link">
+                                <img src="images/project-img1.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="images/project-img2.png" class="test-popup-link">
+                                <img src="images/project-img2.png">
+                            </a>    
+                        </div>
+                        <div class="col">
+                            <a href="images/project-img4.png" class="test-popup-link">
+                                <img src="images/project-img4.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="images/project-img3.png" class="test-popup-link">
+                        <img src="images/project-img3.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/project-img6.png" class="test-popup-link">
+                        <img src="images/project-img6.png">
+                    </a>
+                </div>
+            </div>
+        </section>    
+        <!------------------------ End mobile-project-site ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------  ------------------------------>    
+        <!------------------------ starting locations ------------------------------>
+        <section id="locations" class="locations position-relative">
+            <img src="images/location.png" class="position-absolute" alt="">
+            <div class="container">
+                <h3 class="second-color">يبعد المجمع عن</h3>
+                <img src="images/beauti-line2.png" alt="...">
+                <div class="row">
+                    <div class="col-md col-sm-4 col-6">
+                        <img src="images/location-img1.png" alt="">
+                        <h5>ميترو كنت</h5>
+                        <h6><span>1</span>دقيقة</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <img src="images/location-img2.png" alt="">
+                        <h5>المدينة الطبية</h5>
+                        <h6><span>4</span>دقيقة</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <img src="images/location-img3.png" alt="">
+                        <h5>الحديقة النباتية</h5>
+                        <h6><span>5</span>دقيقة</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <img src="images/location-img4.png" alt="">
+                        <h5>وادي باشاك شهير</h5>
+                        <h6><span>1</span>دقيقة</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <img src="images/location-img5.png" alt="">
+                        <h5>مطار اتاتورك</h5>
+                        <h6><span>20</span>دقيقة</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <img src="images/location-img6.png" alt="">
+                        <h5>المطار الجديد</h5>
+                        <h6><span>30</span>دقيقة</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ End locations ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------ starting services ------------------------------>
+        <section id="services" class="services text-center">
+            <div class="container">
+                <h3 class="main-color">خدمات المشروع</h3>
+                <img src="images/beauti-line2.png" alt="...">
+                <div class="row">
+                    <div class="col-md col-sm-4 col-6">
+                        <div><img src="images/services-img1.png" alt="..."></div>
+                        <h6>مركز اللياقة</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <div><img src="images/services-img2.png" alt="..."></div>
+                        <h6>كراج للسيارات</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <div><img src="images/services-img3.png" alt="..."></div>
+                        <h6>ساونا</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <div><img src="images/services-img4.png" alt="..."></div>
+                        <h6>تدفئة مركزية</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <div><img src="images/services-img5.png" alt="..."></div>
+                        <h6>حماية 24/7</h6>
+                    </div>
+                    <div class="col-md col-sm-4 col-6">
+                        <div><img src="images/services-img6.png" alt="..."></div>
+                        <h6>العاب للأطفال</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <h4>نمط الشقق</h4>
+                        <img src="images/beauti-line3.png" alt="...">
+                        <h2><img src="images/services-bed.png">4+1</h2>
+                    </div>
+                    <div class="col-sm">
+                        <h4>المساحات من</h4>
+                        <img src="images/beauti-line3.png" alt="...">
+                        <h2><img src="images/services-square.png">210 <span>الي</span> 220</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ End services ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------ starting offers ------------------------------>
+        <section id="offers" class="offers">
+            <div class="container">
+                <h3>عروض الدفع</h3>
+                <img src="images/beauti-line4.png" alt="...">
+                <div class="row">
+                    <div class="col-sm">
+                        <h4>خصم علي الكاش</h4>
+                        <h2><img src="images/big-dollar.png">20%</h2>
+                    </div>
+                    <div class="col-sm">
+                        <h4>دفعة أولي</h4>
+                        <h2><img src="images/small-dollar.png">30%</h2>
+                        <h5>وتقسيط علي <span>13</span> شهر</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ End offers ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------ starting about ------------------------------>
+        <section id="about" class="about">
+            <div class="container">
+                <h3 class="main-color">تواصل معنا !</h3>
+                <img src="images/beauti-line2.png" alt="">
+                <form id="form" method="post" action="index.php?sendmail">
+                    <div class="row">
+                        <div class="col-md">
+                            <input type="text" name="name" placeholder="الأسم: ">
+                        </div>
+                        <div class="col-md">
+                            <input type="tel" name="mobile" placeholder="الرقم: ">
+                        </div>
+                        <div class="col-md">
+                            <input type="email" name="email" placeholder="البريد الالكتروني: ">
+                        </div>
+                    </div>
+                    <input type="submit" value="ارسل">
+                </form>
+                
+<!--
+                <?php header('Content-type: text/html; charset=utf-8');
+                        if (isset($_GET['sendmail'])) {
+                            $email=$_POST['email'];
+                            $subject=$_POST['subject'];
+                            $name=$_POST['name'];
+                            $phone=$_POST['mobile'];
+	
+                            if ($_POST['name']<>'' && $_POST['subject']<>'') {
+
+                            require_once("class.phpmailer.php");
+
+                            $mail = new PHPMailer();
+                            $mail->CharSet = 'UTF-8';
+                            $mail->IsSMTP();
+                            $mail->Host = "mail.lalegroup.com.tr";
+                            $mail->SMTPAuth = true;
+                            $mail->Username = "citizenship@lalegroup.com.tr";
+                            $mail->Password = " UWfj68J7";
+                            $mail->From = "citizenship@lalegroup.com.tr";
+                            $mail->Fromname = $_POST['name'];
+                            $mail->AddAddress("citizenship@lalegroup.com.tr");
+
+                            $mail->Subject = "Message from LaleGroup CitizenShip Page";
+                            $mail->Body = "معلومات فورم التواصل
+                                    إسم المرسل: $name 
+                                    إيميل المرسل: $email 
+                                    رقم الهاتف: $phone
+                                    مواصفات العقار: $details ";
+
+                            if(!$mail->Send())
+                            {
+                               echo '<font color="#F62217"><b>Gönderim Hatası: ' . $mail->ErrorInfo . '</b></font>';
+                               exit;
+                            }
+                            echo '<font color="#41A317"><b>Mesaj başarıyla gönderildi.</b></font>';
+                            } else {
+                                 echo '<font color="#F62217"><b>Tüm alanların doldurulması zorunludur.</b></font>';
+                            }
+                        }
+                ?>
+-->
+                
+                <div>
+                    <img src="images/down-logo.png" alt="...">
+                    <h5> المسوق الحصري لمشروع <span>لال بهشة</span></h5>
+                </div>
+            </div>
+        </section>
+        <!------------------------ End about ------------------------------>
+        </div>    
+        <!------------------------  ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------ starting footer ------------------------------>
+        <footer>
+            <div class="container">
+                <img src="images/footer-line.png" alt="...">
+                <div>
+                    <a href="https://www.linkedin.com/company/lalegroup"><i class="fa fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/lalegroup/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/lale_group"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/LaleGroup"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div>
+                    <p class="text-white"><i class="fa fa-whatsapp"></i> +90 552 341 1111</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <img src="images/footer-project-logo.png" alt="...">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <p class="text-white">Olimpiyat Bulvarı Bahçetepe İstanbul Sitesi Medikule F1 - 188 , istanbul/Başakşehir <i class="fa fa-map-marker fa-2x"></i></p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <p class="text-white">جميع الحقوق محفوظة | مجموعة لالي العقارية</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!------------------------ End footer ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------  ------------------------------>
+        <!------------------------ starting button-top  ------------------------------>
+        <div id="button-top">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+        <!------------------------End button-top  ------------------------------>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/fontawesome.min.js"></script>
+        <script src="js/fontawesome5.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/myscript.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <!-- WhatsHelp.io widget -->
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    whatsapp: "+90 552 341 1111", // WhatsApp number
+                    call_to_action: "whatsapp", // Call to action
+                    position: "left", // Position may be 'right' or 'left'
+                };
+                var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+        <!-- /WhatsHelp.io widget -->
+    </body>
+</html>
